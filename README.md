@@ -4,3 +4,7 @@ This project contains some examples on how to use HTTParty to test your API.
 
 https://github.com/jnunemaker/httparty
 >Makes http fun again!
+
+### What are we testing?
+
+All the tests will run against a local fake app (Loadzilla.com), which is fake cloud service to scale your performance test scripts.
