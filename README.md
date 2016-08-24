@@ -3,7 +3,13 @@
 This project contains some examples on how to use HTTParty to test your API.
 
 https://github.com/jnunemaker/httparty
->Makes http fun again!
+>HTTParty: Makes http fun again!
+
+https://github.com/rwz/mock5
+>Mock5: Create and manage API mocks with Sinatra
+
+https://github.com/sinatra/sinatra
+>Sinatra: Classy web-development dressed in a DSL
 
 ### What are we testing?
 
