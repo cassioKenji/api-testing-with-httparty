@@ -1,10 +1,11 @@
 require 'mock5'
 
-@beernivore_api = Mock5.mock("https://beernivore-api.com") do
+@beernivore_api = Mock5.mock("https://beernivore.com") do
+
   get "/health_check" do
-    MultiJson.dump(
-      healthy: "true",
-      message: "success",
-    )
+    headers['Content-Type'] = "application/json"
+
+    return {:healthy => "true", :message => "success"}.to_json
   end
+
 end
