@@ -8,3 +8,6 @@ Feature:  Health Check
     Given a Beernivore API up and running
     When I make a get in "/health_check"
     Then it should return a response with a 200 response code
+    And it's headers must contain the value "application/json" within the "Content-Type"
+    And it's body must contain the value "true" within the "healthy"
+    And it's body must contain the value "success" within the "message"
