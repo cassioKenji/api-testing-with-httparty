@@ -8,11 +8,11 @@ All the tests will run against a local fake api (Beernivore.com), which is a ima
 
 ### What are we using?
 
->HTTParty: Makes http fun again!
+> ### HTTParty: Makes http fun again!
 https://github.com/jnunemaker/httparty
 
->Mock5: Create and manage API mocks with Sinatra
+> ### Mock5: Create and manage API mocks with Sinatra
 https://github.com/rwz/mock5
 
->Sinatra: Classy web-development dressed in a DSL
+> ### Sinatra: Classy web-development dressed in a DSL
 https://github.com/sinatra/sinatra
