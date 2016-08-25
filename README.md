@@ -1,5 +1,5 @@
 # API testing with HTTParty
-[![Build Status](https://travis-ci.org/chaoscifer/api-testing-with-httparty.svg?branch=master)](https://travis-ci.org/chaoscifer/api-testing-with-httparty)
+[![Build Status](https://travis-ci.org/chaoscifer/api-testing-with-httparty.svg?branch=master)](https://travis-ci.org/chaoscifer/api-testing-with-httparty) [![Code Climate](https://codeclimate.com/github/chaoscifer/api-testing-with-httparty/badges/gpa.svg)](https://codeclimate.com/github/chaoscifer/api-testing-with-httparty)
 
 This project contains some examples on how to use HTTParty to test your API.
 
