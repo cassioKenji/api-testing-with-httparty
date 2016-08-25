@@ -8,6 +8,6 @@ require "mock5"
              message: "success",
              # for now, the database does not matter for us :)
              db: { healthy: "true",
-                   message: "success" } }.to_json
+                   message: "connected" } }.to_json
   end
 end
