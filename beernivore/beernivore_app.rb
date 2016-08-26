@@ -9,6 +9,8 @@ require "mock5"
                     uptime: 50_000 },
              # for now, the database does not matter for us :)
              db: { healthy: "true",
-                   message: "connected" } }.to_json
+                   message: "connected" },
+             elasticsearch: { healthy: "true",
+                              message: "ok" } }.to_json
   end
 end
