@@ -5,7 +5,8 @@ require "mock5"
     headers["Content-Type"] = "application/json"
 
     return { app: { healthy: "true",
-                    message: "success" },
+                    message: "success",
+                    uptime: 50_000 },
              # for now, the database does not matter for us :)
              db: { healthy: "true",
                    message: "connected" } }.to_json
