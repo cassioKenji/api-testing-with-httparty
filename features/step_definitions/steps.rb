@@ -14,6 +14,6 @@ Then(/^it should return a response with a (\d+) response code$/) do |code|
   expect(@response.code).to eql(code.to_i)
 end
 
-Then(/^it's body must contain the value "([^"]*)" within the "([^"]*)"$/) do |value, att|
-  expect(@response[att]).to eql(value)
+Then(/^it's body must contain the value "([^"]*)" within the "([^"]*)" for "([^"]*)"$/) do |value, att, here|
+  expect(@response[here][att]).to eql(value)
 end
