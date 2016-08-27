@@ -17,3 +17,7 @@ end
 Then(/^it's body must contain the value "([^"]*)" within the "([^"]*)" for "([^"]*)"$/) do |value, att, here|
   expect(@response[here][att]).to eql(value)
 end
+
+Then(/^it's body must contain a Fixnum type within the "([^"]*)" for "([^"]*)"$/) do |att, here|
+  expect(@response[here][att].class).to eql(Fixnum)
+end
