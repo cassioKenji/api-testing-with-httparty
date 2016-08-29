@@ -1,3 +1,29 @@
-Gemfile.lock
+# OS
+# ==
 .DS_Store
-/.bundle
+ehthumbs.db
+Icon?
+Thumbs.db
+
+# Related ecosystem
+# =================
+.bundle
+Gemfile.lock
+
+# General
+# =======
+*.bak
+*.dat
+*.gz
+*.log
+*.out
+*.pid
+*.swp
+*.tmp
+*.txt
+
+# Sublime Text project files
+# ==========================
+.sublime-project
+*.sublime-project
+*.sublime-workspace
