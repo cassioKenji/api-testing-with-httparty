@@ -26,6 +26,6 @@ require 'faker'
                      alcohol: Faker::Beer.alcohol,
                      location: Faker::Address.country_code },
              contact_info: { site: Faker::Internet.url,
-                             email: Faker::Internet.email } }
+                             email: Faker::Internet.email } }.to_json
   end
 end
