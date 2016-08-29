@@ -18,10 +18,13 @@ GEM
       gherkin (~> 4.0)
     cucumber-wire (0.0.1)
     diff-lcs (1.2.5)
+    faker (1.6.3)
+      i18n (~> 0.5)
     gherkin (4.0.0)
     hashdiff (0.3.0)
     httparty (0.14.0)
       multi_xml (>= 0.5.2)
+    i18n (0.7.0)
     method_source (0.8.2)
     mock5 (1.0.8)
       sinatra (~> 1.4)
@@ -67,6 +70,7 @@ PLATFORMS
 
 DEPENDENCIES
   cucumber
+  faker
   httparty
   mock5
   pry
