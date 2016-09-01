@@ -5,7 +5,7 @@ This project contains some examples on how to use HTTParty to test your API.
 
 ### What are we testing?
 
-All the tests will run against a local fake api (Beernivore.com), which is a imaginary (that in fact runs local with Sinatra) cloud service to check if there is some animal on your booze.
+All the tests will run against a local fake api (Beernivore.com), which is an imaginary (that in fact runs local with Sinatra) cloud service to check if there is some animal on your booze.
 
 ### What are we using?
 
