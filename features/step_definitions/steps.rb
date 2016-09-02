@@ -3,7 +3,7 @@ Given(/^a Beernivore API up and running$/) do
 end
 
 When(/^I make a get in "([^"]*)"$/) do |route|
-  @response = HTTParty.get("https://beernivore.com#{route}")
+  @response = HTTParty.get("https://beernivore.com#{route}", :headers => {"Accept" => "application/json"})
 end
 
 Then(/^it's headers must contain the value "([^"]*)" within the "([^"]*)"$/) do |value, header|
