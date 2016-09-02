@@ -3,7 +3,8 @@ Given(/^a Beernivore API up and running$/) do
 end
 
 When(/^I make a get in "([^"]*)" with "([^"]*)" within the "([^"]*)" header$/) do |route, value, request_header|
-  @response = HTTParty.get("https://beernivore.com#{route}", headers: { request_header.to_s => value.to_s })
+  @response = HTTParty.get("https://beernivore.com#{route}", headers: { request_header.to_s => value.to_s, "User-Agent" => "HTTParty-Cucumber-Tests" })
+  fail "#{@response.response}" unless expect(@response.success?)
 end
 
 Then(/^it's headers must contain the value "([^"]*)" within the "([^"]*)"$/) do |value, header|
