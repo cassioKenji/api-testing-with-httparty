@@ -2,12 +2,16 @@ Given(/^a Beernivore API up and running$/) do
   Mock5.mounted_apis
 end
 
-When(/^I make a get in "([^"]*)"$/) do |route|
-  @response = HTTParty.get("https://beernivore.com#{route}", :headers => {"Accept" => "application/json"})
+When(/^I make a get in "([^"]*)" with "([^"]*)" within the "([^"]*)" header$/) do |route, value, request_header|
+  @response = HTTParty.get("https://beernivore.com#{route}", headers: { request_header.to_s => value.to_s })
 end
 
 Then(/^it's headers must contain the value "([^"]*)" within the "([^"]*)"$/) do |value, header|
   expect(@response.headers[header]).to eql(value)
+end
+
+When(/^the response body must contain a "([^"]*)" as the type$/) do |type|
+  expect(@response.parsed_response.class.to_s).to eql(type)
 end
 
 Then(/^it should return a response with a (\d+) response code$/) do |code|
