@@ -3,7 +3,8 @@ require 'faker'
 
 @beernivore_api = Mock5.mock("https://beernivore.com") do
   get "/health_check" do
-    headers["Content-Type"] = "application/json"
+    headers["Content-Type"] = request.env["HTTP_ACCEPT"]
+    # return JSON.pretty_generate(request.env)
 
     return { app: { healthy: "true",
                     message: "success",
@@ -16,7 +17,8 @@ require 'faker'
   end
 
   get "/beer_of_the_day" do
-    headers["Content-Type"] = "application/json"
+    headers["Content-Type"] = request.env["HTTP_ACCEPT"]
+    # return JSON.pretty_generate(request.env)
 
     return { beer: { name: Faker::Beer.name,
                      vegan_friendly: "true",
