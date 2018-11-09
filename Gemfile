@@ -4,8 +4,8 @@ gem 'cucumber'
 gem 'rspec'
 gem 'rake'
 gem 'httparty'
-gem 'sinatra'
-gem 'mock5'
+gem 'sinatra', '>= 1.4.7'
+gem 'mock5', '>= 1.0.8'
 gem 'faker'
 
 group :development, :test, :dev_integration do
