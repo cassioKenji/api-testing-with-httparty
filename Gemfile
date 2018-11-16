@@ -6,7 +6,7 @@ gem 'rake'
 gem 'httparty'
 gem 'sinatra'
 gem 'mock5'
-gem 'faker'
+gem 'faker', '>= 1.6.3'
 
 group :development, :test, :dev_integration do
   gem 'pry'
