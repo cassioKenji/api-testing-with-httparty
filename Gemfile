@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'cucumber'
 gem 'rspec'
-gem 'rake'
+gem 'rake', '>= 12.3.3'
 gem 'httparty'
 gem 'sinatra'
 gem 'mock5'
