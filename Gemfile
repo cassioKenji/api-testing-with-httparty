@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'cucumber'
+gem 'cucumber', '>= 4.0.0'
 gem 'rspec'
 gem 'rake', '>= 12.3.3'
 gem 'httparty'
